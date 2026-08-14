@@ -1,0 +1,23 @@
+{
+  "buildCommand": "cd foronlyher && npm install && npm run build",
+  "outputDirectory": "foronlyher/dist",
+  "framework": "vite",
+  "installCommand": "cd foronlyher && npm install",
+  "env": {
+    "GEMINI_API_KEY": "@gemini_api_key",
+    "RESEND_API_KEY": "@resend_api_key",
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "foronlyher/dist/server.cjs": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/dist/server.cjs"
+    }
+  ]
+}
