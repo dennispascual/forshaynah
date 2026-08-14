@@ -1,0 +1,6 @@
+{
+  "name": "Gift Surprise",
+  "description": "An interactive 12-page birthday celebration journey for Shaynah featuring animated greetings, framed photo with @ Love D3 neon sign, heartfelt birthday letter with continuous 'Pwede Ka Ba' music stream, sunflower bouquet reveal, 10 interactive 3D flip cards, handwritten letter, forgiveness prompt, playful questions, gift delivery form, and grand finale fireworks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

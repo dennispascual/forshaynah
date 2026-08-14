@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-script {
+    font-family: 'Caveat Brush', 'Kalam', cursive;
+  }
+  .font-handwriting {
+    font-family: 'Patrick Hand', 'Shantell Sans', cursive, sans-serif;
+  }
+  .font-pill {
+    font-family: 'Nunito', 'Fredoka', sans-serif;
+  }
+  .font-neon {
+    font-family: 'Sacramento', 'Dancing Script', 'Pacifico', cursive;
+  }
+  .font-birthday-title {
+    font-family: 'Chewy', 'Sniglet', 'Fredoka', sans-serif;
+  }
+  .font-comic {
+    font-family: 'Comic Neue', 'Patrick Hand', 'Shantell Sans', sans-serif;
+  }
+}
+
+.neon-pink-text {
+  color: #fff;
+  text-shadow:
+    0 0 4px #ff3b94,
+    0 0 10px #ff007f,
+    0 0 20px #ff007f,
+    0 0 35px #ff007f,
+    0 0 50px #ff007f,
+    0 0 70px #d6006b;
+}
+
+.birthday-text-stroke {
+  color: #111111;
+  text-shadow: 
+    -2px -2px 0 #ffffff,
+    2px -2px 0 #ffffff,
+    -2px 2px 0 #ffffff,
+    2px 2px 0 #ffffff,
+    -3px 0 0 #ffffff,
+    3px 0 0 #ffffff,
+    0 -3px 0 #ffffff,
+    0 3px 0 #ffffff,
+    0 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+.stitched-button {
+  background-color: #EFA698;
+  position: relative;
+  box-shadow: 0 4px 14px rgba(220, 120, 105, 0.35);
+}
+
+.stitched-button::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1.5px dashed rgba(255, 255, 255, 0.85);
+  border-radius: 9999px;
+  pointer-events: none;
+}
+
+@keyframes gentleWiggle {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(-3deg) scale(1.02); }
+  75% { transform: rotate(3deg) scale(1.02); }
+}
+
+.animate-wiggle {
+  animation: gentleWiggle 3.5s ease-in-out infinite;
+}
+
+@keyframes floatSoft {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float-soft {
+  animation: floatSoft 4s ease-in-out infinite;
+}
+
+@keyframes butterflyFlutter {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  30% { transform: rotate(3deg) scale(1.04) translateY(-2px); }
+  70% { transform: rotate(-2deg) scale(0.98) translateY(1px); }
+}
+
+.animate-butterfly {
+  animation: butterflyFlutter 3s ease-in-out infinite;
+}
+
